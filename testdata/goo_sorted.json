@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "destination_addresses": [
+    "Germany, PA, USA"
+  ],
+  "origin_addresses": [
+    "Germany, NY, USA"
+  ],
+  "rows": [
+    {
+      "elements": [
+        {
+          "status": "OK",
+          "distance": {
+            "text": "23.6 mi",
+            "value": 232193.000000000
+          },
+          "duration": {
+            "text": "2 hour 42 mins",
+            "value": 6227,
+            "value2": null
+          }
+        }
+      ]
+    }
+  ]
+}

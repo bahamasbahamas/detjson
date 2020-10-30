@@ -1,0 +1,16 @@
+{
+  "isbn": "255-252-255",
+  "title": "The Ultimate Guide",
+  "author": {
+    "firstname": "Charles",
+    "lastname": "Hoskinson"
+  },
+  "category": [
+    "Fiction",
+    "Technology"
+  ],
+  "editor": {
+    "firstname": "Knuth",
+    "lastname": "Donald"
+  }
+}
