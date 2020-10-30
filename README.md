@@ -31,7 +31,7 @@ Output:
 
 #### Requirements
 
-go-version from app/go.mod has been installed 
+go-version 1.14 and go.mod has been installed 
 
 #### How to use it (stores the output in the file test.json)
     marshaller := detjson.NewMarshaller("JSONString")
