@@ -1,0 +1,62 @@
+{
+  "medications": [
+    {
+      "aceInhibitors": [
+        {
+          "name": "lisinopril",
+          "strength": "10 mg Tab",
+          "dose": null,
+          "route": "PO",
+          "sig": "daily",
+          "pillCount": "#90",
+          "refills": 1.3334
+        }
+      ],
+      "betaBlocker": [
+        {
+          "name": "metoprolol tartrate",
+          "strength": "25 mg Tab",
+          "dose": "1 tab",
+          "route": "PO",
+          "sig": "daily",
+          "pillCount": "#90",
+          "refills": 1
+        }
+      ]
+    }
+  ],
+  "labs": [
+    {
+      "name": "Arterial Blood Gas",
+      "time": "Today",
+      "location": "Main Hospital Lab"
+    },
+    {
+      "name": "BMP",
+      "time": "Today",
+      "location": "Primary Care Clinic"
+    },
+    {
+      "name": "BNP",
+      "time": "3 Weeks",
+      "location": "Primary Care Clinic"
+    }
+  ],
+  "imaging": [
+    {
+      "name": "Chest X-Ray",
+      "time": "Today",
+      "location": "Main Hospital Radiology"
+    },
+    {
+      "name": "Chest X-Ray",
+      "time": "Today",
+      "location": "Main Hospital Radiology"
+    },
+    {
+      "name": "Chest X-Ray",
+      "time": "Today",
+      "location": "Main Hospital Radiology"
+    }
+  ]
+}

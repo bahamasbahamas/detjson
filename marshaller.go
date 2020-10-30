@@ -128,7 +128,7 @@ func (m *Marshaller) writeCommaIfNecessary(pos int, length int, buf *bytes.Buffe
 	}
 }
 
-// handleInterfaceArray marshal the array Interface ([]interface{}).
+// handleInterfaceArray marshal the array.json Interface ([]interface{}).
 func (m *Marshaller) handleInterfaceArray(val []interface{}, buf *bytes.Buffer, level int) error {
 	buf.WriteString("[")
 	// für jedes Feld im Array, zB. für alle Traveler
@@ -153,7 +153,7 @@ func (m *Marshaller) handleInterfaceArray(val []interface{}, buf *bytes.Buffer, 
 			}
 			buf.WriteString(str)
 		default:
-			return errors.New("cannot marshall interface array")
+			return errors.New("cannot marshall interface array.json")
 		}
 		m.writeCommaIfNecessary(k, lenVal, buf)
 	}
