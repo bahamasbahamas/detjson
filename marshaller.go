@@ -11,7 +11,7 @@ import (
 
 // Marshaller type.
 type Marshaller struct {
-	Map    map[string]interface{}
+	Map        map[string]interface{}
 	jsonString string
 }
 

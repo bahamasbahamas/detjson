@@ -43,7 +43,6 @@ go-version from app/go.mod has been installed
    	if err != nil {
    		log.Fatal(err)
    	}
-   	// Erstelle Datei für den Output.
    	f, err := os.Create("test.json")
    	if err != nil {
    		log.Fatal(err)
