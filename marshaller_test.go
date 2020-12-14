@@ -93,28 +93,33 @@ func TestMarshalOrdered_OutputIsValidJSON(t *testing.T) {
 // TestMarshalOrdered_OutputIsSorted checks if output is sorted.
 func TestMarshalOrdered_OutputIsSorted(t *testing.T) {
 	tests := []struct {
-		testName string
-		fileName string
+		testName         string
+		fileNameUnsorted string
+		fileNameSorted   string
 	}{
 		{
-			testName: "goo mit integers, float und null",
-			fileName: "goo_sorted",
+			testName:         "goo mit integers, float und null",
+			fileNameUnsorted: "goo",
+			fileNameSorted:   "goo_sorted",
 		},
 		{
-			testName: "isbn",
-			fileName: "isbn_sorted",
+			testName:         "isbn",
+			fileNameUnsorted: "isbn",
+			fileNameSorted:   "isbn_sorted",
 		},
 		{
-			testName: "stack",
-			fileName: "stack_sorted",
+			testName:         "stack",
+			fileNameUnsorted: "stack",
+			fileNameSorted:   "stack_sorted",
 		},
 		{
-			testName: "stack2 mit integers, float und null",
-			fileName: "stack2_sorted",
+			testName:         "stack2 mit integers, float und null",
+			fileNameUnsorted: "stack2",
+			fileNameSorted:   "stack2_sorted",
 		},
 	}
 	for _, test := range tests {
-		testData, err := ReadFile(test.fileName)
+		testData, err := ReadFile(test.fileNameUnsorted)
 		if err != nil {
 			assert.Fail(t, ErrorMessageCouldNotReadTestData, err)
 			return
@@ -130,7 +135,7 @@ func TestMarshalOrdered_OutputIsSorted(t *testing.T) {
 			assert.Fail(t, ErrorMessageCouldNotReadTestData, err)
 			return
 		}
-		jsonSorted, err := ReadFile(test.fileName)
+		jsonSorted, err := ReadFile(test.fileNameSorted)
 		if err != nil {
 			assert.Fail(t, ErrorMessageCouldNotReadTestData, err)
 			return
